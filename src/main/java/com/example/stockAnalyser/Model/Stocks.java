@@ -9,6 +9,10 @@ public class Stocks {
 	@JsonProperty
 	private String bvmf;
 	
+	
+	private Double currentPrice;
+	private Double percentageVariance;
+	private String queryDate;
 	public String getName() {
 		return name;
 	}
@@ -21,6 +25,25 @@ public class Stocks {
 	public void setBvmf(String bvmf) {
 		this.bvmf = bvmf;
 	}
+	public Double getCurrentPrice() {
+		return currentPrice;
+	}
+	public void setCurrentPrice(Double currentPrice) {
+		this.currentPrice = currentPrice;
+	}
+	public Double getPercentageVariance() {
+		return percentageVariance;
+	}
+	public void setPercentageVariance(Double percentageVariance) {
+		this.percentageVariance = percentageVariance;
+	}
+	public String getQueryDate() {
+		return queryDate;
+	}
+	public void setQueryDate(String queryDate) {
+		this.queryDate = queryDate;
+	}
+	
 	@Override
 	public String toString() {
 		return "Stocks [name=" + name + ", bvmf=" + bvmf + "]";
