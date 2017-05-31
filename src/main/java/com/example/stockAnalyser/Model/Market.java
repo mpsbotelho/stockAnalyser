@@ -27,7 +27,11 @@ public class Market {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Market [lstocks=" + lstocks + ", name=" + name + "]";
+	}
 	
 
 }

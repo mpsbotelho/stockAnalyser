@@ -44,5 +44,9 @@ public class Stocks {
 		this.queryDate = queryDate;
 	}
 	
+	@Override
+	public String toString() {
+		return "Stocks [name=" + name + ", bvmf=" + bvmf + "]";
+	}
 	
 }
