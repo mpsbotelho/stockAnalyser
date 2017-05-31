@@ -21,5 +21,9 @@ public class Stocks {
 	public void setBvmf(String bvmf) {
 		this.bvmf = bvmf;
 	}
+	@Override
+	public String toString() {
+		return "Stocks [name=" + name + ", bvmf=" + bvmf + "]";
+	}
 	
 }
